@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+import Header from '../../containers/Header/Header';
+import Menu from '../../containers/Menu/Menu';
+import Main from '../../containers/Main/Main';
+import Footer from '../../containers/Footer/Footer';
 
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <div>
+        <Header />
+        <Menu />
+        <Main />
+        <Footer />
+    </div>
+  )
 }
 
 export default App;
