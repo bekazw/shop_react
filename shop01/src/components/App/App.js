@@ -11,7 +11,7 @@ const App = () => {
     <div>
         <Header />
         <Menu />
-        <Main />
+        <Main arr = {[1,2,3]}/>
         <Footer />
     </div>
   )
