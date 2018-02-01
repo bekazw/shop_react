@@ -1,0 +1,23 @@
+#header_logo {
+    position: absolute;
+    top: 5px;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+#header_search {
+    position: absolute;
+    top: 5px;
+    left: 35%;
+    width: 600px;
+    height: 100px;
+}
+
+#header_login {
+    position: absolute;
+    top: 5px;
+    left: 60%;
+    width: 400px;
+    height: 100px;
+}
