@@ -1,4 +1,5 @@
 import React from 'react';
+import './Menu.css';
 
 const MenuElement = (props) => {
     return (
@@ -12,6 +13,7 @@ const Menu = () => {
             <MenuElement menuName = "HOME" />
             <MenuElement menuName = "ABOUT" />
             <MenuElement menuName = "CONTACTS" />
+            <MenuElement menuName = "BASKET" />
         </div>
     )
 }

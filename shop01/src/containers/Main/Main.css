@@ -1,0 +1,19 @@
+#main {
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    left: 50%;
+    margin-left: -500px;
+    top: 150px;
+    display: inline-block;
+}
+.main_product {
+    width: 100px;
+    height: 130px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
