@@ -4,7 +4,7 @@ const state0 = {
     productsCount : []
 }
 
-const initStore = (state = state0, action) => {
+const Basket = (state = state0, action) => {
     switch ( action.type ) {
         case "ADD_PRODUCT" :
             return {
@@ -23,4 +23,4 @@ const initStore = (state = state0, action) => {
     }    
 }
 
-export default initStore;
+export default Basket;

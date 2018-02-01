@@ -6,9 +6,9 @@ import App from './components/App/App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import initStore from './reducers/init';
+import RootReducer from './reducers/storeConfig';
 
-let store0 = createStore ( initStore ); 
+let store0 = createStore ( RootReducer ); 
 
 console.log (store0.getState());
 

@@ -6,6 +6,7 @@ import Menu from '../../containers/Menu/Menu';
 import Main from '../../containers/Main/Main';
 import Footer from '../../containers/Footer/Footer';
 
+
 const App = () => {
   return (
     <div>
@@ -16,5 +17,6 @@ const App = () => {
     </div>
   )
 }
+
 
 export default App;
