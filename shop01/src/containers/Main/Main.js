@@ -7,33 +7,39 @@ import { connect } from 'react-redux';
 import { addProduct } from '../../actions/AddProd';
 import { bindActionCreators } from 'redux';
 
-const ProductCard = (props) => {
-    return (
-        <div className = "main_product">
-            {props.productId}
-        </div>
-    )
-}
+import ProductCard from '../ProductCard/ProductCard';
 
-const Main = (props) => {
-    let arr = [1,2,3];  
-    console.log(props);  
+const Main = (props) => {  
+
+    let arr = [];
+    props.prods.forEach(element => {
+        arr.push(
+            <ProductCard 
+                prodName = {element.name}
+                prodPic  = {element.pic}
+                prodInfo = {element.info}
+                prodPrice = {element.price} />    
+        )
+    })
+
+    console.log (arr);
+
     return (
         <div id = "main"> 
-            {arr.map(item => <ProductCard productId = {props.prod.products.name} />)}
+            {arr}        
         </div>
     )
 }
 
 const MapStoreToProps = (state) => {
     return {
-        prod : state.prodStore        
+       prods : state.prodStore.products      
     }
 }
 
 const MapDispatchToProps = (dispatch) => {
     return {
-        prodAdd : bindActionCreators(addProduct, dispatch)
+        
     }
 }
 

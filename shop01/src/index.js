@@ -10,7 +10,7 @@ import RootReducer from './reducers/storeConfig';
 
 let store0 = createStore ( RootReducer ); 
 
-console.log (store0.getState());
+console.log (store0.getState().prodStore.products);
 
 ReactDOM.render(
     <Provider store = { store0 } >
