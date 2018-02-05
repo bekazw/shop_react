@@ -7,6 +7,7 @@ const ProductCard = (props) => {
             <p>{props.prodPic}</p>
             <p>{props.prodInfo}</p>
             <p>{props.prodPrice}</p>
+            <button> Order! </button>
         </div>
     )
 }
