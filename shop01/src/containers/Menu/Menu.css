@@ -1,8 +1,12 @@
 #menu_main {
     position: absolute;
-    width: 500px;
+    width: 800px;
     height: 40px;
     left: 50%;
-    margin-left: -250px;
+    margin-left: -400px;
     top: 100px;
+}
+.menu_element {
+    width: 200px;
+    text-align: center;
 }

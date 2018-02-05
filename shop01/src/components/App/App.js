@@ -6,6 +6,8 @@ import Menu from '../../containers/Menu/Menu';
 import Main from '../../containers/Main/Main';
 import Footer from '../../containers/Footer/Footer';
 
+import ProductInfo from '../../containers/ProductInfo/ProductInfo';
+
 const App = () => {
   return (
     <div>
@@ -13,6 +15,8 @@ const App = () => {
         <Menu />
         <Main arr = {[1,2,3]}/>
         <Footer />
+
+        <ProductInfo />
     </div>
   )
 }
